@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  nome_fantasia: MyString
+  nire: MyString
+  data_nire: 2015-01-27
+  incricao_estadual: MyString
+  data_inscricao_estadual: 2015-01-27
+  senha_estadual: MyString
+  inscricao_municipa: MyString
+  data_inscricao_municipal: 2015-01-27
+  alvara: MyString
+  data_alvara: 2015-01-27
+
+two:
+  nome: MyString
+  nome_fantasia: MyString
+  nire: MyString
+  data_nire: 2015-01-27
+  incricao_estadual: MyString
+  data_inscricao_estadual: 2015-01-27
+  senha_estadual: MyString
+  inscricao_municipa: MyString
+  data_inscricao_municipal: 2015-01-27
+  alvara: MyString
+  data_alvara: 2015-01-27

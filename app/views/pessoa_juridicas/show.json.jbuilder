@@ -1,0 +1,1 @@
+json.extract! @pessoa_juridica, :id, :nome, :nome_fantasia, :nire, :data_nire, :incricao_estadual, :data_inscricao_estadual, :senha_estadual, :inscricao_municipa, :data_inscricao_municipal, :alvara, :data_alvara, :created_at, :updated_at

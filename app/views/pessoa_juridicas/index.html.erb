@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pessoa Juridicas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Nome fantasia</th>
+      <th>Nire</th>
+      <th>Data nire</th>
+      <th>Incricao estadual</th>
+      <th>Data inscricao estadual</th>
+      <th>Senha estadual</th>
+      <th>Inscricao municipa</th>
+      <th>Data inscricao municipal</th>
+      <th>Alvara</th>
+      <th>Data alvara</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pessoa_juridicas.each do |pessoa_juridica| %>
+      <tr>
+        <td><%= pessoa_juridica.nome %></td>
+        <td><%= pessoa_juridica.nome_fantasia %></td>
+        <td><%= pessoa_juridica.nire %></td>
+        <td><%= pessoa_juridica.data_nire %></td>
+        <td><%= pessoa_juridica.incricao_estadual %></td>
+        <td><%= pessoa_juridica.data_inscricao_estadual %></td>
+        <td><%= pessoa_juridica.senha_estadual %></td>
+        <td><%= pessoa_juridica.inscricao_municipa %></td>
+        <td><%= pessoa_juridica.data_inscricao_municipal %></td>
+        <td><%= pessoa_juridica.alvara %></td>
+        <td><%= pessoa_juridica.data_alvara %></td>
+        <td><%= link_to 'Show', pessoa_juridica %></td>
+        <td><%= link_to 'Edit', edit_pessoa_juridica_path(pessoa_juridica) %></td>
+        <td><%= link_to 'Destroy', pessoa_juridica, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pessoa juridica', new_pessoa_juridica_path %>

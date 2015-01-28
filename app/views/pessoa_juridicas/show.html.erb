@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @pessoa_juridica.nome %>
+</p>
+
+<p>
+  <strong>Nome fantasia:</strong>
+  <%= @pessoa_juridica.nome_fantasia %>
+</p>
+
+<p>
+  <strong>Nire:</strong>
+  <%= @pessoa_juridica.nire %>
+</p>
+
+<p>
+  <strong>Data nire:</strong>
+  <%= @pessoa_juridica.data_nire %>
+</p>
+
+<p>
+  <strong>Incricao estadual:</strong>
+  <%= @pessoa_juridica.incricao_estadual %>
+</p>
+
+<p>
+  <strong>Data inscricao estadual:</strong>
+  <%= @pessoa_juridica.data_inscricao_estadual %>
+</p>
+
+<p>
+  <strong>Senha estadual:</strong>
+  <%= @pessoa_juridica.senha_estadual %>
+</p>
+
+<p>
+  <strong>Inscricao municipa:</strong>
+  <%= @pessoa_juridica.inscricao_municipa %>
+</p>
+
+<p>
+  <strong>Data inscricao municipal:</strong>
+  <%= @pessoa_juridica.data_inscricao_municipal %>
+</p>
+
+<p>
+  <strong>Alvara:</strong>
+  <%= @pessoa_juridica.alvara %>
+</p>
+
+<p>
+  <strong>Data alvara:</strong>
+  <%= @pessoa_juridica.data_alvara %>
+</p>
+
+<%= link_to 'Edit', edit_pessoa_juridica_path(@pessoa_juridica) %> |
+<%= link_to 'Back', pessoa_juridicas_path %>

@@ -1,0 +1,61 @@
+<%= form_for(@pessoa_juridica) do |f| %>
+  <% if @pessoa_juridica.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pessoa_juridica.errors.count, "error") %> prohibited this pessoa_juridica from being saved:</h2>
+
+      <ul>
+      <% @pessoa_juridica.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :nome_fantasia %><br>
+    <%= f.text_field :nome_fantasia %>
+  </div>
+  <div class="field">
+    <%= f.label :nire %><br>
+    <%= f.text_field :nire %>
+  </div>
+  <div class="field">
+    <%= f.label :data_nire %><br>
+    <%= f.date_select :data_nire %>
+  </div>
+  <div class="field">
+    <%= f.label :incricao_estadual %><br>
+    <%= f.text_field :incricao_estadual %>
+  </div>
+  <div class="field">
+    <%= f.label :data_inscricao_estadual %><br>
+    <%= f.date_select :data_inscricao_estadual %>
+  </div>
+  <div class="field">
+    <%= f.label :senha_estadual %><br>
+    <%= f.text_field :senha_estadual %>
+  </div>
+  <div class="field">
+    <%= f.label :inscricao_municipa %><br>
+    <%= f.text_field :inscricao_municipa %>
+  </div>
+  <div class="field">
+    <%= f.label :data_inscricao_municipal %><br>
+    <%= f.date_select :data_inscricao_municipal %>
+  </div>
+  <div class="field">
+    <%= f.label :alvara %><br>
+    <%= f.text_field :alvara %>
+  </div>
+  <div class="field">
+    <%= f.label :data_alvara %><br>
+    <%= f.date_select :data_alvara %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
