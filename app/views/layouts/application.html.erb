@@ -1,32 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Gescomp Heroku</title>
-  <p><%= flash[:notice] %></p>
-  <p><%= flash[:alert] %></p>
-  <link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap.css">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="brand" href="/">Gescomp</a>
-      <ul class="nav">
-        <li class="active"><a href="/pessoas_juridicas">Pessoas Jurídicas</a></li>
-      </ul>
-    </div>
-  </div>
-</div>	
- <div class="container">
-  <%= yield %>
- </div>
- <footer>
-  <div class="container">
-    GesComp 2015
-  </div>
-</footer>
-</body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Gescomp" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Gescomp" %>">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <header>
+      <%= render 'layouts/navigation' %>
+    </header>
+    <main role="main">
+      <%= render 'layouts/messages' %>
+      <%= yield %>
+    </main>
+  </body>
 </html>

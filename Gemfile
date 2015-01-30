@@ -46,3 +46,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'carrierwave'
 
 gem 'devise'
+
+group :development do
+  gem 'rails_layout'
+end
